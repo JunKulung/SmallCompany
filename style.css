@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600|Quicksand:300,400,500');
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+.navbar {
+	overflow: hidden;
+	background: #222629;
+	width: 100%;
+	transition: .5s;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	box-shadow: 0 7px 6px -6px rgb(0, 0, 0);
+	letter-spacing: 2px;
+	z-index: 1;
+}
+
+.navbar a,
+.navbar label {
+	display: block;
+	padding: 20px;
+	color: #86c232;
+	text-decoration: none;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.navbar a:hover {
+	background-color: #86c232;
+	transition: all .3s;
+	color: #1f2833;
+}
+
+.navbar label {
+	float: right;
+	padding: 33px;
+	cursor: pointer;
+}
+
+.navbar label:after {
+	content: "\2261";
+	font-size: 1.8em;
+	padding: 10px;
+}
+
+.logo11 {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 100;
+	font-size: 1.9em;
+}
+
+.nav-bar {
+	float: right;
+	max-height: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+.nav-bar ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+.nav-bar li {
+	display: block;
+	text-align: center;
+}
+
+.nav-bar a {
+	padding: 20px;
+	width: 100%;
+}
+
+#nav1 {
+	display: none;
+}
+
+#nav1:checked~.nav-bar {
+	max-height: 300px;
+}
+
+#background {
+	position: relative;
+	height: 32rem;
+	background: url("1.jpg") center center no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+}
+
+#background h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#background p {
+	margin-top: .2%;
+	text-align: center;
+	color: #ffffff;
+}
+
+#background h6 {
+	padding-top: 100px;
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #86c232;
+	font-size: 20px;
+}
+
+#background button {
+	padding: 15px 70px;
+	margin-top: 20px;
+	border: 1px solid #86c232;
+	background-color: transparent;
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#background button:hover {
+	background-color: #86c232;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.Description {
+	background-color: #222629;
+	color: #fdfdfd;
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	letter-spacing: 2px;
+	flex-flow: row wrap;
+}
+
+.Description li {
+	list-style: none;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+.first-content {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+	color: #222629;
+}
+
+.first-content h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.first-content p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 200;
+	padding-top: 10px;
+}
+
+.fcontent {
+	flex-basis: 50%;
+	border-right: 1px solid rgb(230, 230, 230);
+	padding: 20px;
+}
+
+.ffcontent {
+	flex-basis: 30%;
+	padding: 50px 20px 20px 20px;
+}
+
+.ffcontent h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+
+.ffcontent .uppercase {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.fcontent button {
+	padding: 15px 50px;
+	margin-top: 20px;
+	border: none;
+	background-color: rgb(235, 230, 230);
+	color: #222629;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.ffcontent button {
+	width: 100%;
+	padding: 15px;
+	margin-top: 20px;
+	border: none;
+	background-color: #222629;
+	color: #86c232;
+	cursor: pointer;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+
+.second-content {
+	border: 1px solid black;
+}
+
+@media only screen and (max-width: 900px) {
+	.Description {
+		flex-flow: column;
+		text-align: center;
+	}
+	.first-content {
+		flex-flow: column;
+		text-align: center;
+	}
+	.ffcontent {
+		border: 1px solid violet;
+		padding: 10px 20px 20px 20px;
+	}
+}
