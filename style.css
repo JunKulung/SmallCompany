@@ -162,6 +162,13 @@
 	color: #222629;
 }
 
+.first-content h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
 .first-content h2 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
@@ -176,18 +183,18 @@
 
 .fcontent {
 	flex-basis: 50%;
-	border-right: 1px solid rgb(230, 230, 230);
 	padding: 20px;
 }
 
 .ffcontent {
 	flex-basis: 30%;
-	padding: 50px 20px 20px 20px;
+	padding: 140px 20px 20px 20px;
 }
 
 .ffcontent h3 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
+	font-size: 25px;
 }
 
 .ffcontent .uppercase {
@@ -218,21 +225,155 @@
 	font-weight: 500;
 }
 
-.second-content {
+.second {
 	border: 1px solid black;
+	background-color: #222629;
+	color: white;
+	text-align: center;
+}
+
+.second .head {
+	margin-top: 50px;
+}
+
+.second h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+}
+
+.second p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 200;
+	padding: 10px 250px;
+}
+
+.second-content {
+	display: flex;
+	padding: 20px 90px;
+	justify-content: center;
+}
+
+.content-second {
+	flex-basis: 30%;
+	margin: 0 10px;
+	overflow: hidden;
+	border: 1px solid #6e6c6c;
+}
+
+.content-second h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.contact {
+	display: flex;
+	padding: 60px;
+	flex-flow: row wrap;
+}
+
+.contact-content {
+	flex-basis: 35%;
+	padding: 0 90px;
+}
+
+.contact-content h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+}
+
+.contact-content h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.contact-content p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	padding: 10px;
+}
+
+.contact-content hr {
+	width: 80%;
+}
+
+.contact-content input {
+	width: 100%;
+	height: 40px;
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 10px;
+}
+
+.contact-content :placeholder-shown {
+	padding: 0 0 0 10px;
+}
+
+.contact-content textarea {
+	height: 30%;
+	width: 100%;
+}
+
+.contact-content button {
+	width: 100%;
+	padding: 13px;
+	margin-top: 6px;
+	background-color: rgb(199, 55, 55);
+	color: white;
+	border: none;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+footer {
+	background-color: #1f2833;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+footer h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+footer li {
+	list-style: none;
+	padding: 70px 60px;
+}
+
+footer i {
+	margin: 0 10px;
+	font-size: 30px;
 }
 
 @media only screen and (max-width: 900px) {
-	.Description {
+	.Description,
+	.second-content {
 		flex-flow: column;
 		text-align: center;
+	}
+	.content-second {
+		border: none;
 	}
 	.first-content {
 		flex-flow: column;
 		text-align: center;
 	}
-	.ffcontent {
-		border: 1px solid violet;
-		padding: 10px 20px 20px 20px;
+	.ffcontent,
+	.second p {
+		padding: 10px 70px;
+	}
+	.contact-content {
+		flex-basis: 100%;
+		padding: 0;
+	}
+	footer {
+		justify-content: center;
 	}
 }
